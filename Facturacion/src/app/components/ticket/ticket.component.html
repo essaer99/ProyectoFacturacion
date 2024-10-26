@@ -1,0 +1,33 @@
+<div class="container mt-5 d-flex justify-content-center">
+  <div class="border border-dark rounded p-4" style="width: 600px; background-color: #ffffff;">
+    <h2 class="text-center">Subir Ticket</h2>
+   
+
+    <div class="d-flex justify-content-center mb-3">
+      <img src="assets/imagenes/ticket.jpeg" class="img-fluid  mx-auto" alt="logo" style="width: 200px; height: 200px;" />
+    </div>
+
+
+    <div 
+      class="border border-dark rounded p-4 text-center" 
+      style="cursor: pointer; height: 150px;" 
+
+      (dragover)="onDragOver($event)" 
+      (dragleave)="onDragLeave($event)" 
+      (drop)="onDrop($event)" 
+      (click)="fileInput.click()"
+
+      [ngClass]="{'border-success': isDragging}">
+
+      <input type="file" #fileInput (change)="onFileSelected($event)" accept="image/*" style="display: none;" />
+
+      <p *ngIf="!selectedFile">Arrastra y suelta una imagen aquí o haz clic para buscar</p>
+      <p *ngIf="selectedFile">{{ selectedFile.name }}</p>
+    </div>
+
+
+    <div class="text-center mt-3">
+      <button class="btn btn-success btn-lg mt-3" (click)="upload()" [disabled]="!selectedFile">Subir Ticket</button>
+    </div>
+  </div>
+</div>
