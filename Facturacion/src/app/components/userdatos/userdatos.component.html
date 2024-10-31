@@ -1,1 +1,66 @@
-<p>userdatos works!</p>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Formulario de Registro</h2>
+  
+    <form (ngSubmit)="onSubmit()">
+      <h4 class="custom-text-color mt-4 mb-3">Datos Personales</h4>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="name" class="font-weight-bold">Nombre</label>
+          <input type="text" class="form-control" [(ngModel)]="user.name" name="name" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="apellidoPaterno" class="font-weight-bold">Apellido Paterno</label>
+          <input type="text" class="form-control" [(ngModel)]="user.apellidoPaterno" name="apellidoPaterno" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="apellidoMaterno" class="font-weight-bold">Apellido Materno</label>
+          <input type="text" class="form-control" [(ngModel)]="user.apellidoMaterno" name="apellidoMaterno" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="telefono" class="font-weight-bold">Teléfono</label>
+          <input type="tel" class="form-control" [(ngModel)]="user.telefono" name="telefono" pattern="\d{10}" maxlength="10" required>
+        </div>
+      </div>
+  
+      <!-- faltan datos solo es prueba  -->
+     
+  
+      <button type="submit" class="btn btn-primary btn-block mt-4">Registrar</button>
+    </form>
+  
+    <!-- Listado de personas -->
+    <h4 class="mt-4">Listado de Personas</h4>
+    <ul class="list-group">
+      <li *ngFor="let user of userService.getUser(); let i = index" class="list-group-item">
+        {{ user.name }} {{ user.apellidoPaterno }} {{ user.apellidoMaterno }}
+        <button (click)="editUser(i)" class="btn btn-sm btn-warning float-right">Editar</button>
+        <button (click)="deleteUser(i)" class="btn btn-sm btn-danger float-right mr-2">Eliminar</button>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <!-- extraaaaaaa 
+<div class="container">
+    <h2>Formulario de Registro</h2>
+    <form (ngSubmit)="onSubmit()">
+      
+      
+        <input type="text" [(ngModel)]="user.name" name="name" placeholder="Nombre" required>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  
+    <h3>Lista de Usuarios</h3>
+    <ul>
+      <li *ngFor="let user of users">
+        {{ user.name }} - {{ user.email }}
+        <button (click)="editUser(user)">Editar</button>
+        <button (click)="deleteUser(user.id)">Eliminar</button>
+      </li>
+    </ul>
+  </div>
+
+-->

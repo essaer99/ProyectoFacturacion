@@ -4,3 +4,10 @@ body {
   .card {
     border-radius: 15px;
   }
+
+  .custom-text-color {
+    color: #34a330; /* Cambia a cualquier color hexadecimal */
+  }
+
+  
+ 

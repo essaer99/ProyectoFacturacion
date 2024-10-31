@@ -1,6 +1,6 @@
 .navbar-tonos {
     
-    background-color: #abe7cc; /* Cambia este valor al tono que prefieras */
+    background-color: #4df0a7; /* Cambia este valor al tono que prefieras */
     }
     
     .navbar-tonos .navbar-brand,
@@ -10,9 +10,9 @@
  .navbar-tonos .nav-link:hover {
         
        
-    color: #000000; /* Color de enlace al pasar el ratón */
+    color: #fffefe; /* Color de enlace al pasar el ratón */
 
-    background-color: #ffffff; /* Color de fondo claro */
+    background-color: #636363; /* Color de fondo claro */
 }
 
 

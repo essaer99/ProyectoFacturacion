@@ -20,6 +20,13 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/ticket">Ticket</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/userdatos">Datos personales</a>
+        </li>
+
+
+<!--
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Datos de Usuario
@@ -29,6 +36,9 @@
             <li><a class="dropdown-item" href="#">Datos Fiscales</a></li>
           </ul>
         </li>
+        -->
+
+
         <li class="nav-item">
           <a class="btn btn-outline-dark" routerLink="/login">Inicio de Sesión</a>
         </li>
@@ -46,26 +56,26 @@
 <!--pie de pagina-->
 <footer class="footer">
   <div class="container">
-      <div class="row align-items-center g-0 border-top py-2">
-          <!-- Desc -->
-          <div class="col-md-6 col-12 text-center text-md-start">
-              <span>© <span id="copyright">
-                  <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-              </span>Factura Rapido .</span>
-          </div>
-          
-            <!-- pie de pagina  -->
-          <div class="col-12 col-md-6">
-              <nav class="nav nav-footer justify-content-center justify-content-md-end">
-                  <a class="nav-link active ps-0">Privacidad</a>
-                  <a class="nav-link" >Confidencialidad </a>
-                  <a class="nav-link" >Responsabilidad</a>
-                  <a class="nav-link" >Efectividad</a>
-              </nav>
-          </div>
+    <div class="row align-items-center g-0 border-top py-2">
+      <!-- Desc -->
+      <div class="col-md-6 col-12 text-center text-md-start">
+        <span>© <span id="copyright"></span> Factura Rápido.</span>
+        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()));</script>
       </div>
+      
+      <!-- Pie de página -->
+      <div class="col-12 col-md-6">
+        <nav class="nav nav-footer justify-content-center justify-content-md-end">
+          <a class="nav-link active ps-0">Privacidad</a>
+          <a class="nav-link">Confidencialidad</a>
+          <a class="nav-link">Responsabilidad</a>
+          <a class="nav-link">Efectividad</a>
+        </nav>
+      </div>
+    </div>
   </div>
 </footer>
+
 
 
 
