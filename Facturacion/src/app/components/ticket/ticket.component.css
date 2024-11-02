@@ -1,0 +1,7 @@
+.border-success {
+    border-color: #28a745 !important;
+  }
+  
+  .border-primary {
+    transition: border-color 0.3s;
+  }

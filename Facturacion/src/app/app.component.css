@@ -1,0 +1,82 @@
+.navbar-tonos {
+    
+    background-color: #abe7cc; /* Cambia este valor al tono que prefieras */
+    }
+    
+    .navbar-tonos .navbar-brand,
+    .navbar-tonos .nav-link {
+        color: #000000; /* Color de texto para el logotipo y enlaces */
+    }
+ .navbar-tonos .nav-link:hover {
+        
+       
+    color: #000000; /* Color de enlace al pasar el ratón */
+
+    background-color: #ffffff; /* Color de fondo claro */
+}
+
+
+.navbar-nav {
+    flex-direction: row; /* Alinear elementos en fila */
+    justify-content: center; /* Centrar los elementos en la barra */
+    width: 100%; /* Tomar todo el ancho */
+}
+
+.nav-item {
+    margin: 0 1px; /* Espaciado entre los elementos del menú */
+}
+
+.dropdown-menu {
+    left: auto;
+    right: 0; /* Alinear el menú desplegable a la derecha */
+}
+
+.navbar-brand {
+    font-weight: bold; /* Hacer más destacado el nombre */
+}
+
+.navbar {
+    font-family: 'Arial', sans-serif; /* Cambia a la fuente que elegiste */
+    font-size: 1 rem; /* Tamaño de fuente más grande */
+  }
+  
+  .nav-link {
+    font-size: 1 rem; /* Aumenta el tamaño de los enlaces de navegación */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem; /* Aumenta el tamaño del título de la navbar */
+  }
+  
+  /* Ajustar el navbar para que se ajuste a la pantalla */
+  @media (max-width: 768px) {
+    .navbar {
+      font-size: 1rem; /* Ajusta el tamaño para pantallas pequeñas */
+    }
+  }
+
+
+
+
+
+/*bienvenida*/
+.welcome-container {
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 50px; /* Espaciado alrededor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.welcome-images {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Espaciado vertical */
+}
+
+.welcome-images img {
+    width: 150px; /* Ancho de las imágenes */
+    height: 150px; /* Alto de las imágenes */
+    margin: 0 15px; /* Espaciado horizontal */
+}
+
+
